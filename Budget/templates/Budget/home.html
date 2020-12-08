@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'Budget/base.html' %}
+{% block body_block %}
+
+<div>
+<h1>welcome User{{request.user}}</h1>
+<h3>{{request.user}}<a href="{%url 'signout'%}">logout</a></h3>
+
+<a href="{%url 'edit'%}">EditProfile</a>
+<a href="{%url 'addexpenses'%}">Add Expenses</a>
+<a href="{%url 'reviewexpenses'%}">Review Expenses</a>
+</div>
+{% endblock %}

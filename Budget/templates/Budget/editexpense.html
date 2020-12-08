@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'Budget/base.html' %}
+{% block body_block %}
+<div>
+
+
+<h2>Edit Expenses</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit">
+</form>
+</div>
+{% endblock %}
